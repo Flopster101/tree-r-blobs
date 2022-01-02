@@ -1517,6 +1517,13 @@ static void query_platform(const char *snd_card_name,
             sizeof(msm_device_to_be_id_internal_codec) / sizeof(msm_device_to_be_id_internal_codec[0]);
 
     }
+
+#if 1
+    char mixer_xml_path_custom[PROPERTY_VALUE_MAX];
+    property_get("vendor.audio.mixer_xml.path", mixer_xml_path_custom, "");
+    if (strlen(mixer_xml_path_custom) > 0)
+        strlcpy(mixer_xml_path, mixer_xml_path_custom, sizeof(mixer_xml_path_custom));
+#endif
 }
 
 void platform_set_echo_reference(struct audio_device *adev, bool enable,
