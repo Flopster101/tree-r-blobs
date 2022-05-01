@@ -35,7 +35,6 @@ on early-init
     chmod 0755 /sys/kernel/debug
     chown root system /dev/kmsg
     chmod 440 /proc/net/unix
-    chmod 0620 /dev/kmsg
     
 on init
     # Create cgroup mount point for memory
