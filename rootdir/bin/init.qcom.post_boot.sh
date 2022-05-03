@@ -407,7 +407,7 @@ else
                 disable_core_ctl
                 echo 1 > /sys/module/lowmemorykiller/parameters/enable_lmk
             fi
-        echo "15360,19200,23040,26880,34415,43737" > /sys/module/lowmemorykiller/parameters/minfree
+        echo "4677,9354,14031,18708,23385,28062" > /sys/module/lowmemorykiller/parameters/minfree
         echo 53059 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
         fi
 
