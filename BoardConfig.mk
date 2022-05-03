@@ -20,7 +20,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_mi439
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_mi439
 
 # Kernel
-TARGET_KERNEL_CONFIG := mi439-perf_defconfig
+TARGET_KERNEL_CONFIG := silont-olive_defconfig
 
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
