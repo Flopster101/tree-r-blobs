@@ -367,6 +367,7 @@ on post-fs-data
     mkdir /persist/sensors/registry/registry
     mkdir /data/misc/sensors
     chmod 0775 /data/misc/sensors
+    chmod 0620 /dev/kmsg
 
     # set aggressive read ahead for dm-0 and dm-1 during boot up
     write /sys/block/dm-0/queue/read_ahead_kb 2048
