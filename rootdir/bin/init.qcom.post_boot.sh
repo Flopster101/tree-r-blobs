@@ -408,7 +408,7 @@ else
                 echo 1 > /sys/module/lowmemorykiller/parameters/enable_lmk
             fi
         echo "4677,9354,14031,18708,23385,28062" > /sys/module/lowmemorykiller/parameters/minfree
-        echo 53059 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+        echo 73400 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
         fi
 
         # Enable adaptive LMK for all targets &
